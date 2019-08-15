@@ -3,7 +3,7 @@ from asyncio import sleep
 import discord
 
 # 自分のBotのアクセストークンに置き換えてください
-TOKEN = 'NjExMzg2MzcyMzc2MjMxOTQ4.XVTZKw.Sdwukr3cY79Yg8TNtMVHLIdZF7M'
+TOKEN = 'NjExMzg2MzcyMzc2MjMxOTQ4.XVTbKw.NoNyY_W0n9yqeGSkAPG-1nqlkQY'
 
 client = discord.Client()
 
