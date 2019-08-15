@@ -7,6 +7,15 @@ TOKEN = 'NjExMzg2MzcyMzc2MjMxOTQ4.XVTbKw.NoNyY_W0n9yqeGSkAPG-1nqlkQY'
 
 client = discord.Client()
 
+@client.commands
+async def ping(ctx):
+    await ctx.send('pong')
+    
+@client.commands
+async def neko(ctx):
+    await ctx.send('にゃーん！')
+
+
 #BOTログイン処理
 @client.event
 async def on_ready():
