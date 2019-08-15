@@ -1,6 +1,10 @@
 #discord.pyのインポート
 from asyncio import sleep
 import discord
+
+# 自分のBotのアクセストークンに置き換えてください
+TOKEN = 'NjExMzg2MzcyMzc2MjMxOTQ4.XVTZKw.Sdwukr3cY79Yg8TNtMVHLIdZF7M'
+
 client = discord.Client()
 
 #BOTログイン処理
@@ -51,4 +55,4 @@ async def on_message(message):
                 await sleep(5)
                 await client.delete_message(delmsg)
 
-client.run("***")
+client.run(TOKEN)
