@@ -20,7 +20,8 @@ async def on_ready():
 # BOT動作プログラム
 @client.event
 async def on_message(message):
-
+    # 送り主がBotだった場合反応したくないので
+    if client.user != message.author:
         # 削除コマンド
         if message.content.startswith("!delchat "):
             #役職比較
