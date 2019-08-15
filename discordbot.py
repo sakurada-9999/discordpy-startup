@@ -16,6 +16,10 @@ async def on_ready():
 # BOT動作プログラム
 @client.event
 async def on_message(message):
+        # 「/neko」と発言したら「にゃーん」が返る処理
+        if message.content == '/neko':
+            await message.channel.send('にゃーん')
+
         # 削除コマンド
         if message.content.startswith("!delchat "):
             #役職比較
