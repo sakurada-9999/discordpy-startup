@@ -3,11 +3,6 @@ from asyncio import sleep
 import discord
 client = discord.Client()
 
-# ピンポン
-@bot.command()
-async def ping(ctx):
-    await ctx.send('pong')
-
 #BOTログイン処理
 @client.event
 async def on_ready():
